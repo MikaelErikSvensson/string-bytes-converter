@@ -1,0 +1,10 @@
+export const bytesToString = (bytes: Uint8Array) => String.fromCharCode(...bytes);
+export const stringToBytes = (str: string) => Uint8Array.from(str, (c) => c.charCodeAt(0));
+export const bytesToUtf8 = (bytes: Uint8Array) => new TextDecoder().decode(bytes);
+export const utf8ToBytes = (utf8: string) => new TextEncoder().encode(utf8);
+export const bytesToUtf16 = (bytes: Uint8Array) => new TextDecoder("utf-16").decode(bytes);
+export const utf16ToBytes = (utf16: string) => new TextEncoder().encode(utf16);
+export const bytesToUtf32 = (bytes: Uint8Array) => new TextDecoder("utf-32").decode(bytes);
+export const utf32ToBytes = (utf32: string) => new TextEncoder().encode(utf32);
+export const bytesToAscii = (bytes: Uint8Array) => new TextDecoder("ascii").decode(bytes);
+export const asciiToBytes = (ascii: string) => new TextEncoder().encode(ascii);

@@ -1,0 +1,34 @@
+{
+  "name": "string-bytes-converter",
+  "version": "1.0.0",
+  "description": "A TypeScript module for converting to/from strings and byte arrays.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup index.ts --format cjs,esm --dts",
+    "release": "pnpm run build && changeset publish",
+    "lint": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikaelErikSvensson/string-bytes-converter.git"
+  },
+  "keywords": [
+    "string",
+    "strings",
+    "convert",
+    "byte",
+    "bytes"
+  ],
+  "author": "pernestrand",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MikaelErikSvensson/string-bytes-converter/issues"
+  },
+  "homepage": "https://github.com/MikaelErikSvensson/string-bytes-converter#readme",
+  "devDependencies": {
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  }
+}
